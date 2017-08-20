@@ -1,0 +1,116 @@
+\documentclass{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{multicol}
+
+
+\title{ \Huge \textbf{A Survey of Subject-Independent Brain Computer Interface}}
+\author{Dr.Charith Chithranjan, Dinuka Salwathura, Nadun Indunil 
+\\ 
+Udara Bibile, Thimal Kumarasinghe
+\\
+charith@cse.mrt.ac.lk, dinuka.13@cse.mrt.ac.lk, thimal@ieee.org\\ nadunindunil.13@cse.mrt.ac.lk, bibile.13@cse.mrt.ac.lk 
+}
+\date{}
+\begin{document}
+\maketitle
+\begin{multicols}{2}
+	
+\textbf{	Abstract-- Brain Computer Interface (BCI) communication system enables users to interact with the computer using brain signals without any muscle movement. It is now becoming an experienced area of research due to the vast amount of researches that have been done. This is going to revolutionize the field of Human Computer Interaction(HCI). BCI will be of immense value for the disabled people enabling them to use the computer as a normal person. }
+
+\begin{center}
+I. Introduction
+\end{center}
+	Many researches have been contributed to the develpoment of BCI and its applications. Researches have been evolving from subject specific EEG analysis to subject independent EEG analysis. People have found characteristics of EEG waves using machine learning techniques as well as extracting data from research grade EEG acquisition devices and commercial grade, low cost EEG extraction devices like Emotiv EPOC.
+	Development of low cost eeg acquisition devices like Emotiv EPOC and scientists doing research whether those devices extract EEG signals which can be used for research, these two factors motivate the researchers to do research in the field of BCI. But our focus is not only on Emotiv EPOC based BCIs. 
+	Emotiv EPOC, Neurosky, OpenBCI, can be identified as EEG acquisition devices which can be used for research. Among them Emotiv EPOC is a low cost commercial grade, Neurosky and OpenBCI are research grade EEG acquisition devices.  A fairly trained bci can recognize even depression like abnormal mood of people compared to a healthy patterns of brain activity[2]. 
+	BCIs’ use different activities related to different types of EEG waves. Mainly used types are Evoked Potentials. They are of different types, 
+	ERP: Event related evoked potentials
+	VEP: Visual Evoked Potentials
+	PEA: Evoked Potentials Acoustic
+	MRP: Motor Evoked Potentials
+	SSVEP: Steady State Visual Evoked Responses  
+	
+	Making a BCI subject independent solves many problems in BCI. The training time of BCI can be eliminated  if BCI is subject independent.
+	This paper discusses the feasibility of Subject Independent BCI, what algorithms can be used to make BCI Subject Independent with using the research done on BCI.
+
+\begin{center}
+II. Can BCI Be Subject Independent?
+\end{center}
+
+Researchers have mostly done researches on subject-specific brain pattern identification[2]. But with the development of EEG acquisition devices and being available at low cost researchers have moved towards complex areas of BCI like subject-independent BCI. Subject -independent classifier can be developed by identifying the matching model from a trained set of models[2]. We have to develop a set of trained models of different types of people. Then we can match the subject according to an available model. This is a method to develop a subject-independent classifier[2]. 
+Developing of subject-independent BCI is feasible [2] [4][5][6][7][8][9][10]. But some researchers have used different methodologies to achieve subject independence without analysing the common features of EEG waves of different subjects of same experiment.
+
+\begin{center}
+III. Applications
+\end{center}
+\textbf{Medical} \\
+BCI can be used for vast range of medical applications including psychiatric treatments. One such example is training neuropsychiatric patients to correct and reverse their abnormal patterns of brain activity[2]. 
+\\ \textbf{Non Medical}
+	
+	With the advancement of consumer grade brain computer interfaces Non Medical applications of BCI were developed intending the public usage. Device control applications for the disabled persons and other applications such as gaming and entertainment for the healthy people are introduced using different EEG potentials for an instance Event Related Potential or Visual Evoked Potential. Following is a categorization of existing experiments and researches done with relevent to different applications.
+	
+\textbf{Device Control and Robots}
+	
+	The need of making the lives of the disabled people had become the major application of the BCI. Controlling a wheelchair or prosthetic arm by simply wearing the neuro headset and do an imaginary task.
+	
+People have done experiments like moving a virtual cube designed by EMOTIV with the subject having to do an appropriate imaginary task and map them into 2 LEDs simulating an opening of a door and switching a light.[3] 	
+
+\textbf{Educational and Self-regulation}
+
+\textbf{Gaming and Entertainment}
+
+
+\begin{center}
+IV. Preprocessing
+\end{center}
+
+In terms of preprocessing we can use filters for the EEG data. The special point about preprocessing is there is no defined way of preprocessing for different applications of EEG as well as for a specific type of  Evoked Potential we use.To analyze the data we have to do fourier transformation and convert the EEG time series signals to frequency domain. In the emotiv sdk they do fourier and their own preprocessing. So we get the data from Emotiv sdk which are preprocessed. If we extract raw EEG data we need to preprocess them. 
+We can eliminate the 50Hz noise using a bandpass. And Principal Component Analysis is a major preprocessing in this scenario[11]. We can reduce the dimensions into the dimensions which contribute mostly for the changes in data[12].
+
+\begin{center}
+V. How to use classification algorithms to make bci subject independent
+\end{center}
+	For SSVEP it is straightforward to make a system subject independent. Because in SSVEP we can get the frequency of any person’s EEG of channels of Visual Cortex by doing fourier transform to time series EEG data. So for any person we get the frequency of the scene the person is looking at regardless of the subject [13]
+
+References
+	  
+[1] On the Use of the Emotiv EPOC Neuroheadset as a Low Cost Alternative for EEG Signal Acquisition
+Diego S. Benítez, Sebastian Toscano and Adrian Silva Universidad San Francisco de Quito USFQ
+Colegio de Ciencias e Ingenierías “El Politécnico” Campus Cumbayá, Casilla Postal 17-1200-841 Quito, Ecuador
+[2] A subject-independent pattern-based Brain-Computer Interface
+ Andreas M. Ray1 
+[3]	A. I. N. Alshbatat, P. J. Vial, P. Premaratne, and L. C. Tran, “EEG-based Brain-computer Interface for Automating Home Appliances,” Journal of Computers, vol. 9, no. 9, 2014.
+[4] Real-Time Subject-Independent Pattern Classification of Overt and Covert Movements from fNIRS Signals
+Neethu Robinson1, Ali Danish Zaidi, Mohit Rana3¤b, Vinod A. Prasad1, Cuntai Guan1,4, Niels Birbaumer3,5, Ranganatha Sitaram
+[5] Subject Independent BCI Based on LTCCSP method And GA Wrapper Optimization
+Sepideh Hatamikia, Ali Motie Nasrabadi
+[6]Comparison of Designs Towards a Subject-Independent Brain-Computer Interface based on Motor Imagery
+Fabien Lotte, Cuntai Guan, and Kai Keng Ang
+[7] A Subject-Independent Brain-Computer Interface based on Smoothed, Second-Order Baselining
+Boris Reuderink, Jason Farquhar, Mannes Poel, Anton Nijholt
+[8] Subject independent EEG-based BCI decoding Siamac
+Siamac Fazli, Cristian Grozea M, arton Dan´ oczy Florin Popescu, Benjamin Blankertz Klaus-Robert Muller Abstract
+[9] Subject-independent, SSVEP-based BCI: trading off among accuracy, responsiveness and complexity
+N. Mora, I. De Munari and P. Ciampolini
+[10] An approach to improve the performance of subject-independent BCIs-based on motor imagery
+allocating subjects by gender
+Jessica Cantillo-Negrete1,2*, Josefina Gutierrez-Martinez1, Ruben I Carino-Escobar1, Paul Carrillo-Mora3 and David Elias-Vinas2
+
+[11] Feature Extraction of EEG Signals using Wavelet and Principal Component analysis
+
+[12] Dimensionality Reduction and Channel Selection of Motor Imagery Electroencephalographic Data
+
+
+This document is an example of \texttt{thebibliography} environment using 
+in bibliography management. Three items are cited: \textit{The \LaTeX\ Companion} 
+book \cite{latexcompanion}, the Einstein journal paper \cite{einstein}, and the 
+Donald Knuth's website \cite{knuthwebsite}. The \LaTeX\ related items are
+\cite{latexcompanion,knuthwebsite}. 
+
+
+\bibliographystyle{unsrt}
+\bibliography{references}
+
+\end{multicols}
+\end{document}

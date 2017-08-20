@@ -1,0 +1,55 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: survey paper.aux
+The style file: unsrt.bst
+Database file #1: references.bib
+I was expecting a `,' or a `}'---line 5 of file references.bib
+ :     
+ :     year =         "1905",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "knuthwebsite"
+Warning--empty booktitle in einstein
+Warning--empty year in einstein
+You've used 2 entries,
+            1791 wiz_defined-function locations,
+            456 strings with 3858 characters,
+and the built_in function-call counts, 379 in all, are:
+= -- 26
+> -- 19
+< -- 0
++ -- 7
+- -- 5
+* -- 19
+:= -- 65
+add.period$ -- 6
+call.type$ -- 2
+change.case$ -- 1
+chr.to.int$ -- 0
+cite$ -- 4
+duplicate$ -- 21
+empty$ -- 43
+format.name$ -- 5
+if$ -- 84
+int.to.chr$ -- 0
+int.to.str$ -- 2
+missing$ -- 3
+newline$ -- 13
+num.names$ -- 2
+pop$ -- 14
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 6
+stack$ -- 0
+substring$ -- 0
+swap$ -- 2
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 2
+while$ -- 2
+width$ -- 3
+write$ -- 22
+(There was 1 error message)
